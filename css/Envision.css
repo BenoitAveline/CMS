@@ -1,55 +1,54 @@
-/********************************************
-   AUTHOR:  			Erwin Aligam 
-   WEBSITE:   			http://www.styleshout.com/
-	TEMPLATE NAME:		Envision
-   TEMPLATE CODE: 	S-0013
-   VERSION:          1.1
-	LAST MODIFIED     Nov-14-2007 	
- *******************************************/
- 
-/********************************************
-   HTML ELEMENTS
-********************************************/ 
+@font-face {
+	font-family: 'headpolice';
+	src: url('Vonique%2092%20Regular.otf');
+}
+@font-face {
+	font-family: 'corps';
+	src: url('CaviarDreams.ttf');
+}
+@font-face {
+	font-family: 'titre';
+	src: url('CaviarDreams.ttf');
+}
 
 /* Top Elements */
 * { margin: 0; padding: 0; outline: 0 }
 
 body {
-	background: #CCC;
-	font: 70%/1.5em Verdana, Tahoma, arial, sans-serif;
-	color: #555; 
+	background: #FFF;
+	font: 1em 'corps', Verdana, Tahoma, arial, sans-serif;
+	color: #555;
 	text-align: center;
 }
 
 /* links */
 a, a:visited {
 	text-decoration: none;
-	color: #2180BC;
-	background: inherit;
+	color: #554444;
 }
 a:hover {
-	color: #88ac0b;
+	color: #555;
 	background: inherit;
 	text-decoration: underline;
 }
 
 /* headers */
 h1, h2, h3 {
-	font-family: 'Trebuchet MS', Tahoma, Sans-serif;	 		
+	font-family: 'titre', 'Trebuchet MS', Tahoma, Sans-serif;
 }
 h1 {
 	font-size: 150%;	
 	font-weight: normal;
-	color: #006699;
+	color: #000;
 }
 h2 {
 	font-size: 140%;
 	text-transform: uppercase;
-	color: #88ac0b;
+	color: #000;
 }
 h3 {
 	font-size: 120%;
-	color: #666666; 
+	color: #666666;
 }
 
 /* images */
@@ -91,7 +90,7 @@ blockquote {
 	margin: 10px;
  	padding: 0 0 0 28px;  
    border: 1px solid #f2f2f2; 
-  	background: #FAFAFA url(../images/quote.gif) no-repeat 5px 5px;    
+  	background: #FAFAFA url(../images/quote.gif) no-repeat 5px 5px;
 }
 
 /* start - table */
@@ -103,13 +102,13 @@ th strong {
 	color: #fff;
 }
 th {
-	background: #93BC0C;
+	background: #777;
 	height: 29px;
 	padding-left: 12px;
 	padding-right: 12px;
 	color: #FFF;
 	text-align: center;
-	border-left: 1px solid #B6D59A;
+	border-left: 1px solid #222;
 	border-bottom: solid 2px #FFF;
 }
 form th {
@@ -142,27 +141,27 @@ tr.row-b {
 /* form elements */
 form {
 	margin:10px; padding: 0 5px;
-	border: 1px solid #f2f2f2; 
+	border: 2px solid #666666;
 	background-color: #FAFAFA; 	
 }
 label {
 	display:block;
-	font-weight:bold;
 	margin:5px 0;
 }
 input {
 	padding:2px;
-	border:1px solid #eee;
+	border:1px solid #000;
 	font: normal 1em Verdana, sans-serif;
-	color:#777;
+	color:#222;
 }
 textarea {
 	padding:2px;
 	font: normal 1em Verdana, sans-serif;
-	border:1px solid #eee;
-	height:100px;
+    border:1px solid #000;
+    width: 90%;
+	height:200px;
 	display:block;
-	color:#777;
+	color:#222;
 }
 input.button { 
 	font: bold 12px Arial, Sans-serif; 
@@ -170,7 +169,7 @@ input.button {
 	margin: 0;
 	padding: 2px 3px; 
 	color: #FFF;
-	background: #8EB50C url(../images/button-bg.jpg) repeat-x 0 0;
+	background: #222 url(../images/button-bg.jpg) repeat-x 0 0;
 	border: none;
 }
 
@@ -184,7 +183,7 @@ input.button {
 .searchform p { margin: 0; padding: 0; }
 .searchform input.textbox { 
 	width: 120px;
-	color: #777; 
+	color: #777;
 	height: 18px;
 	padding: 2px;	
 	border: 1px solid #E5E5E5;
@@ -199,52 +198,49 @@ input.button {
 
 /********************************************
    LAYOUT
-********************************************/ 
+********************************************/
+
 #wrap {
-	width: 820px;
-	background: #CCC url(../images/content.jpg) repeat-y center top;
+	width: 100%;
+	background: #FFF;
 	margin: 0 auto;
 	text-align: left;
 }
 #content-wrap {
 	clear: both;
-	width: 760px;
+	width: 98%;
 	padding: 0; 
 	margin: 10px auto;
 }
 header {
-	width: 820px;
+	width: 100%;
 	position: relative;
-	height: 103px;
-	background: #CCC url(../images/header.jpg) no-repeat center top;
+	height: auto;
+	background: #FFF;
 	padding: 0;	
-	color: #FFF;	
+	color: #000000;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 header h1 a {
-	position: absolute;
-	margin: 0; padding: 0;
-	font: bolder 44px 'Trebuchet MS', Arial, Sans-serif;
-	letter-spacing: -2px;
-	color: #FFF !important;
+	font: 80px 'headpolice', Trebuchet MS, Arial, Sans-serif;
+	color: #000000 !important;
 	text-transform: none;
 	text-decoration: none;
 	background: transparent;
-	
-	/* change the values of top and left to adjust the position of the logo*/
-	top: 25px; left: 47px;	
+    letter-spacing : 0.1em;
 }
+
 header h1 a:hover {
     text-decoration:none;
 }
 header p {
-	position: absolute;
 	margin: 0; padding: 0;
-	font: normal 12px 'Trebuchet MS', Arial, Sans-serif;
+	font: normal 20px 'headpolice', Trebuchet MS, Arial, Sans-serif;
 	text-transform: none;
-	color: #FFF;
-	
-	/* change the values of top and left to adjust the position of the slogan*/
-	top: 70px; left: 55px;		
+	color: #000000;
+    letter-spacing : 1.5em;
 }
 
 /* header links */
@@ -259,17 +255,18 @@ header #header-links a {
 	text-decoration: none;	
 }
 header #header-links a:hover {
-	color: #D4E59F;	
+	color: #333;
 }
 
 /* Menu */
 nav {
 	clear: both;	
 	margin: 0 auto; padding: 0;
-	background: url(../images/menu.jpg) repeat-x 0 0;	
+	background: #222222;
 	font: bold 12px/37px Verdana, Arial, Tahoma, Sans-serif;
 	height: 37px;
-	width: 780px;	
+	width: 100%;
+	border-bottom: 2px solid #777777;
 }
 nav ul {
 	float: right;
@@ -283,43 +280,119 @@ nav ul li a {
 	display: block;
 	float: left;
 	padding: 0 12px;
-	color: #FFF !important;	
+	color: #FFF !important;
 	text-decoration: none !important;
 }
 nav ul li.last a {
 	padding-right: 20px;	
 }
 nav ul li a:hover {
-	color: #D4E59F !important;	
+	color: #EFEFEF !important;
 }
 nav ul li#current a {	
-	color: #D4E59F !important;
+	color: #EFEFEF !important;
+}
+
+#menumobile {
+    display: none;
+}
+#hiddenmobile{
+    display: none;
+    position: absolute;
+    top: 37px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    background-color: #222222;
+    padding: 10px;
+    margin-top: 0;
+    color: #FFF;
+    border-right: 1px solid #777777;
+    z-index: 100;
 }
 
 /* Main Column */
 #main {
-	float: left;
-	width: 70%;
-	padding: 0; margin: 5px 0 0 5px;
+	float: right;
+	width: 78%;
+	padding: 0;
+    margin: 5px 0 0 5px;
 	display: inline;
 }
 #main h2 {
-	margin-top: 10px;
-	font: Bold 140% 'Trebuchet MS', Tahoma, Sans-serif;
-	color: #88ac0b; 
+	margin-top: 1px;
+	margin-bottom: 10px;
+	font: Bold 140% 'titre', 'Trebuchet MS', Tahoma, Sans-serif;
+	color: #000;
 	padding: 5px 0 5px 25px; 	
 	border-bottom: 1px solid #EFF0F1;
-	background: #FFF url(../images/square-green.png) no-repeat 3px 50%;	
+	background: #FFF url(../images/square-green.png) no-repeat 3px 50%;
 	text-transform: none;
 }
 #main h2 a {
 	background: none;
-	color: #88ac0b;
+	color: #000;
 	text-decoration: none;
+}
+
+#main p {
+	background: #FFF;
+    text-align: justify;
 }
 
 #main ul li {
 	list-style-image: url(../images/bullet.gif);
+}
+
+article {
+    position: relative;
+    display: inline-block;
+    width: 44%;
+    vertical-align: top;
+	padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+	margin-left: 1%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #EFF0F1;
+    background: #FFF ; /*url(../images/grade.png) repeat-x bottom;*/
+}
+
+article img, p img {
+    max-width: 100%;
+}
+
+.article_body {
+    max-height: 190px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.grade {
+    position: absolute;
+    bottom: 0px;
+    background: url(../images/grade.png) repeat-x bottom;
+    width: 100%;
+    height: 16px;
+    text-align: center;
+    font-size: 92%;
+}
+
+.suite {
+    display: block;
+    position: absolute;
+    vertical-align: baseline;
+    width: auto;
+    border: 1px solid #EFF0F1;
+    padding: 5px;
+    margin-bottom: 0px;
+    background-color: #FFFFFF;
+}
+
+.suite:hover {
+    text-decoration:none;
+    background-color: #EFEFEF;
+
 }
 
 .post-footer {
@@ -343,59 +416,85 @@ nav ul li#current a {
 
 /* Sidebar */	
 #sidebar {
-	float: right;
-	width: 26.5%;
-	padding: 0; margin: 0;	
-	color: #68774A;	
+	float: left;
+	width: 18%;
+	padding: 10px;
+	margin-top: 0;
+	color: #222;
+	background: #FFF;
+    border-right: 1px solid #EEEFF0;
 }	
 #sidebar h3 {
-	margin-top: 10px;
+	margin-top: 11px;
 	padding: 5px 5px; 
-	font: bold 1.4em 'Trebuchet MS', Tahoma, Sans-serif;
-	color: #728D26;	
+	font: bold 1.4em 'titre', 'Trebuchet MS', Tahoma, Sans-serif;
+	color: #000;
+    border-bottom: 1px solid #EFF0F1;
+
 }
-#sidebar ul.sidemenu {
+ul.sidemenu {
 	list-style: none;
 	text-align: left;
 	margin: 7px 4px 8px 0; padding: 0;
-	text-decoration: none;		
-	background: url(../images/dots.jpg) repeat-x left top;
+	text-decoration: none;
+
 }
-#sidebar ul.sidemenu li {
+ul.sidemenu li {
 	list-style: none;
-	background: url(../images/dots.jpg) repeat-x left bottom;
 	padding: 4px 0 4px 5px;
 	margin: 0 2px;	
-	color: #68774A;	
+	color: #222;
 }
 * html body #sidebar ul.sidemenu li {
 	height: 1%;
 }
-#sidebar ul.sidemenu li a {
+ul.sidemenu li a {
 	text-decoration: none;	
 	background-image: none;	
-	color: #666666;			
+	color: #666666;
 }
-#sidebar ul.sidemenu li a:hover {	
-	color: #1773BC;	
+ul.sidemenu li a:hover {
+	color: #333;
 }
-#sidebar ul.sidemenu ul { margin: 0 0 0 5px; padding: 0; }
-#sidebar ul.sidemenu ul li { background: none; }
+ul.sidemenu ul { margin: 0 0 0 5px; padding: 0; }
+ul.sidemenu ul li { background: none; }
 
 
 /* Footer */	
 footer {
-	color: #C6DDEE;
-	background: #CCC url(../images/footer.jpg) no-repeat center top;
+	color: #333;
+	background: #EEE url(../images/cc.png) no-repeat 10px 15px;;
 	clear: both;
-	width: 820px;
-	height: 65px;
-	text-align: center;	
-	font-size: 92%;	
+	width: auto;
+	height: auto;
+    padding-left: 35px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+	text-align: left;
+	font: bolder 0.8em 'Trebuchet MS', Tahoma, Sans-serif;
 }
 footer a { 
-	color: #FFF;
+	color: #333;
 	text-decoration: none; 
+}
+
+#top_arrow{
+    display: block;
+    position: fixed;
+    color: #FFFFFF;
+    bottom: 10px;
+    right: 10px;
+    padding-top: 8px;
+    width: 40px;
+    text-align: center;
+    border: 2px solid #777777;
+    border-radius: 10px;
+    background: #222222;
+    font: Bold 20px 'headpolice', Trebuchet MS, Arial, Sans-serif;
+}
+
+#top_arrow:hover{
+    text-decoration: none;
 }
 
 /* alignment classes */
@@ -409,3 +508,26 @@ footer a {
 
 .middle { vertical-align: middle; }
 
+@media all and (max-width: 1024px) {
+    article {
+        display: block;
+        width: auto;
+        margin-right: 5.5%;
+    }
+    #main {
+        width: 98%;
+    }
+    #sidebar {
+        display: none;
+    }
+    #menumobile {
+        display: block;
+    }
+    #menumobile:hover + #hiddenmobile {
+        display: block;
+    }
+    #hiddenmobile:hover {
+        display: block;
+    }
+
+}

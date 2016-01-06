@@ -2,7 +2,7 @@
 foreach ($listeNews as $news)
 {
 ?>
-  <h2><a href="news-<?= $news['id'] ?>.html"><?= $news['titre'] ?></a></h2>
-  <p><?= nl2br($news['contenu']) ?></p>
+  <article><h2><a href="news-<?= $news['id'] ?>.html"><?= $news['titre'] ?></a></h2>
+    <div class="article_body"><?= nl2br($news['contenu']) ?> <div class="grade"></div> </div><a class="suite" href="news-<?= $news['id'] ?>.html"> Lire la suite !</a></article>
 <?php
 }

@@ -11,7 +11,7 @@ class NewsController extends BackController
 {
   public function createCache()
   {
-    return ['index' => '1 year'];
+    return ['index' => '1 hour'];
   }
   
   public function executeIndex(HTTPRequest $request)
@@ -54,7 +54,7 @@ class NewsController extends BackController
       
       if (!empty($news))
       {
-        $this->cache->write('news_'.$newsId, $news, '1 year');
+        $this->cache->write('news_'.$newsId, $news, '1 hour');
       }
     }
     
@@ -68,7 +68,7 @@ class NewsController extends BackController
     if ($comments === null)
     {
       $comments = $this->managers->getManagerOf('Comments')->getListOf($newsId);
-      $this->cache->write('comments_'.$newsId, $comments, '1 year');
+      $this->cache->write('comments_'.$newsId, $comments, '1 hour');
     }
     
     $this->page->addVar('title', $news->titre());
