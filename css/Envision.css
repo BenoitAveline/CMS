@@ -66,6 +66,11 @@ h1, h2, h3, p {
 	padding: 10px;		
 	margin: 0;
 }
+
+header h1, header h2 {
+	padding: 0px;
+}
+
 ul, ol {
 	margin: 5px 20px;
 	padding: 0 20px;
@@ -217,13 +222,13 @@ header {
 	position: relative;
 	height: auto;
 	background: #FFF;
-	padding: 0;	
+	padding: 0;
 	color: #000000;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
-header h1 a {
+header h1 {
 	font: 80px 'headpolice', Trebuchet MS, Arial, Sans-serif;
 	color: #000000 !important;
 	text-transform: none;
@@ -232,7 +237,7 @@ header h1 a {
     letter-spacing : 0.1em;
 }
 
-header h1 a:hover {
+header a:hover {
     text-decoration:none;
 }
 header p {
@@ -260,10 +265,11 @@ header #header-links a:hover {
 
 /* Menu */
 nav {
-	clear: both;	
-	margin: 0 auto; padding: 0;
+	clear: both;
+	margin: 0 auto;
+	padding: 0;
 	background: #222222;
-	font: bold 12px/37px Verdana, Arial, Tahoma, Sans-serif;
+	font: bold 0.8em Verdana, Arial, Tahoma, Sans-serif;
 	height: 37px;
 	width: 100%;
 	border-bottom: 2px solid #777777;
@@ -279,7 +285,7 @@ nav ul li {
 nav ul li a {
 	display: block;
 	float: left;
-	padding: 0 12px;
+	padding: 12px;
 	color: #FFF !important;
 	text-decoration: none !important;
 }
@@ -299,7 +305,7 @@ nav ul li#current a {
 #hiddenmobile{
     display: none;
     position: absolute;
-    top: 37px;
+    top: 70px;
     right: 0px;
     width: auto;
     height: auto;
@@ -366,6 +372,21 @@ article img, p img {
     max-height: 190px;
     overflow: hidden;
     text-align: justify;
+}
+
+.thumbbox {
+	float: left;
+	max-height: 140px;
+	width: 140px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	clip: auto;
+	overflow: hidden;
+	vertical-align: text-top;
+}
+
+.thumbbox img {
+	width: 140px;
 }
 
 .grade {
@@ -523,11 +544,25 @@ footer a {
     #menumobile {
         display: block;
     }
-    #menumobile:hover + #hiddenmobile {
-        display: block;
+	#hiddenmobile {
+		display: none;
+	}
+    #menumobile:focus + #hiddenmobile {
+		display: block;
     }
     #hiddenmobile:hover {
-        display: block;
+		display: block;
     }
+	body {
+		background: #FFF;
+		font: 2em 'corps', Verdana, Tahoma, arial, sans-serif;
+		color: #555;
+		text-align: center;
+	}
+	nav {
+		font: bold 1em Verdana, Arial, Tahoma, Sans-serif;
+		height: 70px;
+	}
+
 
 }

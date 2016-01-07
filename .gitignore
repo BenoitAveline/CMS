@@ -1,4 +1,5 @@
-.idea/
+.idea
+publicimg
 App/Backend/Config/app.xml
 lib/OCFram/PDOFactory.php
 

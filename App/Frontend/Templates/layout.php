@@ -19,7 +19,7 @@
           <?php if ($user->isAuthenticated()) { ?>
             <li><a href="/admin/news-insert.html">Ajouter une news</a></li>
           <?php } ?>
-            <li><a id="menumobile" href="">Accéder à : </a><div id="hiddenmobile"><?php $sidebar="
+            <li><a id="menumobile" href="#">Accéder à : </a><div id="hiddenmobile"><?php $sidebar="
           <ul class=\"sidemenu\">
             <li><a href=\"news-2.html\">Mon CV</a></li>
             <li><a href=\"http://github.com/Rovhell\">Mon github</a></li>
@@ -28,8 +28,8 @@
       </nav>
 
       <header>
-        <h1><a href="/">Aveline&nbsp;&nbsp;Benoit</a></h1>
-        <p><br/>A maker blog</p>
+        <a href="/"><h1>Aveline&nbsp;&nbsp;Benoit</h1>
+        <p>A maker blog</p></a>
       </header>
 
       <div id="content-wrap">
