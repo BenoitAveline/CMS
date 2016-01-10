@@ -1,4 +1,7 @@
-<h2><?= $news['titre'] ?></h2>
+<h2><?= $news['titre'] ?>
+  <?php if ($user->isAuthenticated()) { ?>
+    <span class="action"><a href="admin/news-update-<?= $news['id'] ?>.html"><img src="/images/update.png" alt="Modifier" /></a> <a href="admin/news-delete-<?= $news['id'] ?>.html"><img src="/images/delete.png" alt="Supprimer" /></a></span>
+  <?php } ?></h2>
 <p><?= nl2br($news['contenu']) ?></p>
 
 <?php if ($news['dateAjout'] != $news['dateModif']) { ?>

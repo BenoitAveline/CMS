@@ -1,5 +1,6 @@
 .idea
 publicimg
 App/Backend/Config/app.xml
+App/Frontend/Templates/analyticstracking.php
 lib/OCFram/PDOFactory.php
 

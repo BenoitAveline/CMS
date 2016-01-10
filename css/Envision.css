@@ -11,6 +11,14 @@
 	src: url('CaviarDreams.ttf');
 }
 
+/*
+Colors :
+87EBF2 light
+6FCFED medium
+58B4E2 dark
+DB3D15 Opposite
+*/
+
 /* Top Elements */
 * { margin: 0; padding: 0; outline: 0 }
 
@@ -270,9 +278,8 @@ nav {
 	padding: 0;
 	background: #222222;
 	font: bold 0.8em Verdana, Arial, Tahoma, Sans-serif;
-	height: 37px;
+	height: 60px;
 	width: 100%;
-	border-bottom: 2px solid #777777;
 }
 nav ul {
 	float: right;
@@ -286,14 +293,19 @@ nav ul li a {
 	display: block;
 	float: left;
 	padding: 12px;
+	padding-top: 25px;
 	color: #FFF !important;
 	text-decoration: none !important;
+	height: 60px;
+	border-top: 6px solid #222222;
 }
 nav ul li.last a {
 	padding-right: 20px;	
 }
 nav ul li a:hover {
-	color: #EFEFEF !important;
+	color: #000 !important;
+	background-color: #FFFFFF;
+	border-top: 6px solid #DB3D15;
 }
 nav ul li#current a {	
 	color: #EFEFEF !important;
@@ -310,7 +322,7 @@ nav ul li#current a {
     width: auto;
     height: auto;
     background-color: #222222;
-    padding: 10px;
+    padding: 0px;
     margin-top: 0;
     color: #FFF;
     border-right: 1px solid #777777;
@@ -339,6 +351,9 @@ nav ul li#current a {
 	background: none;
 	color: #000;
 	text-decoration: none;
+}
+h2 .action {
+	float: right;
 }
 
 #main p {
@@ -460,24 +475,31 @@ ul.sidemenu {
 	text-decoration: none;
 
 }
-ul.sidemenu li {
+ul.sidemenu a li {
 	list-style: none;
-	padding: 4px 0 4px 5px;
+	padding: 4px 0 4px 10px;
 	margin: 0 2px;	
 	color: #222;
+	border-left: 5px solid #FFFFFF;
 }
 * html body #sidebar ul.sidemenu li {
 	height: 1%;
 }
-ul.sidemenu li a {
+ul.sidemenu a {
 	text-decoration: none;	
 	background-image: none;	
 	color: #666666;
+
 }
-ul.sidemenu li a:hover {
-	color: #333;
+ul.sidemenu a:hover {
+	text-decoration: none;
+	color: #000;
 }
-ul.sidemenu ul { margin: 0 0 0 5px; padding: 0; }
+ul.sidemenu a li:hover {
+	border-left: 5px solid #DB3D15;
+}
+
+ul.sidemenu ul { margin: 0 0 0 0px; padding: 0; }
 ul.sidemenu ul li { background: none; }
 
 
@@ -540,7 +562,13 @@ footer a {
     }
     #sidebar {
         display: none;
+		padding: 0px;
+		margin: 0px;
     }
+	ul.sidemenu, ul.sidemenu li, ul.sidemenu ul  {
+		margin: 0px; padding: 0px;
+	}
+
     #menumobile {
         display: block;
     }
@@ -562,6 +590,41 @@ footer a {
 	nav {
 		font: bold 1em Verdana, Arial, Tahoma, Sans-serif;
 		height: 70px;
+	}
+	ul.sidemenu a {
+		clear: both;
+		padding:  0px 0px 0px 0px;
+		margin:  4px 2px 4px 2px;
+		border-left: 7px solid #222222;
+		border-top: 0;
+	}
+	ul.sidemenu {
+		clear: both;
+		padding:  0px 0px 0px 0px;
+		margin:  0px 0px 0px 0px;
+	}
+	ul.sidemenu a li {
+		display: block;
+		padding: 0px 0px 0px 0px;
+		margin:  0px 0px 0px 0px;
+		border:0px;
+		background-color: #222222;
+		color: #FFFFFF !important;
+	}
+	ul.sidemenu a li:hover {
+		background-color: #222222;
+		color: #FFFFFF !important;
+		border-left: 0px solid #222222;
+		text-decoration: none;
+		padding: 0;
+		margin: 0;
+	}
+	ul.sidemenu a:hover {
+		text-decoration: none;
+		background-color: #222222;
+		color: #FFFFFF !important;
+		border: 0px;
+		border-left: 7px solid #DB3D15;
 	}
 
 

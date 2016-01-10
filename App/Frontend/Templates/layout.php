@@ -11,6 +11,7 @@
   </head>
   
   <body>
+  <?php include_once("analyticstracking.php") ?>
     <div id="wrap">
       <nav>
         <ul>
@@ -21,8 +22,8 @@
           <?php } ?>
             <li><a id="menumobile" href="#">Accéder à : </a><div id="hiddenmobile"><?php $sidebar="
           <ul class=\"sidemenu\">
-            <li><a href=\"news-2.html\">Mon CV</a></li>
-            <li><a href=\"http://github.com/Rovhell\">Mon github</a></li>
+            <a href=\"news-2.html\"><li>Mon CV</li></a>
+            <a href=\"http://github.com/Rovhell\"><li>Mon github</li></a>
           </ul>"; echo $sidebar?></div></li>
         </ul>
       </nav>
