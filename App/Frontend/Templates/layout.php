@@ -49,6 +49,18 @@
 
     
       <footer>PHP and CSS Templates by Benoît Aveline</footer>
+      <script>
+        window.onscroll = function() {showArrow()};
+
+        function showArrow() {
+          if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            document.getElementById("top_arrow").className = "show_arrow";
+          } else {
+            document.getElementById("top_arrow").className = "hide_arrow";
+          }
+
+        }
+      </script>
     </div>
   </body>
 </html>
