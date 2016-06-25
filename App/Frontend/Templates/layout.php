@@ -12,6 +12,7 @@
   
   <body>
   <?php include_once("analyticstracking.php") ?>
+  <div id="scrollBarTop" style="width: 0%;"></div>
     <div id="wrap">
       <nav>
         <ul>
@@ -45,11 +46,17 @@
         </section>
       </div>
 
-        <a id="top_arrow" href="#wrap">A</a>
+        <a id="top_arrow" class="hide_arrow" href="#wrap">A</a>
 
     
       <footer>PHP and CSS Templates by Benoît Aveline</footer>
       <script>
+        var scrollTotal;
+        var scrollRelatif;
+        var clientSize;
+        var relativClientSize;
+        var currentScroll;
+
         window.onscroll = function() {showArrow()};
 
         function showArrow() {
@@ -58,6 +65,11 @@
           } else {
             document.getElementById("top_arrow").className = "hide_arrow";
           }
+          scrollTotal = document.documentElement.scrollHeight;
+          clientSize = document.documentElement.clientHeight;
+          currentScroll = document.documentElement.scrollTop;
+          scrollRelatif = (currentScroll) * 100 / (scrollTotal - clientSize);
+          document.getElementById("scrollBarTop").style.width = scrollRelatif + "%";
 
         }
       </script>
