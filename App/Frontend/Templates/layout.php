@@ -24,8 +24,11 @@
             <li><a id="menumobile" href="#">Accéder à : </a><div id="hiddenmobile"><?php $sidebar="
           <ul class=\"sidemenu\">
             <a href=\"news-2.html\"><li>Mon CV</li></a>
-            <a href=\"http://github.com/Rovhell\"><li>Mon github</li></a>
-          </ul>"; echo $sidebar?></div></li>
+            <a href=\"http://github.com/BenoitAveline\"><li>Mon espace github</li></a>
+            <a href=\"http://aveline.benoit.free.fr/lightCorridor\"><li>Light Corridor Project</li></a>
+            <a href=\"http://aveline.benoit.free.fr\"><li>Outil Ortho</li></a>
+          </ul>";
+                echo $sidebar?></div></li>
         </ul>
       </nav>
 
